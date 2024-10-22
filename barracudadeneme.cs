@@ -42,3 +42,32 @@ public class ImageProcessor : MonoBehaviour
     }
 }
 
+
+/* public void CaptureImage(Camera cam)
+{
+    RenderTexture renderTexture = new RenderTexture(256, 256, 24);
+    cam.targetTexture = renderTexture;
+    cam.Render();
+
+    RenderTexture.active = renderTexture;
+    Texture2D image = new Texture2D(256, 256);
+    image.ReadPixels(new Rect(0, 0, renderTexture.width, renderTexture.height), 0, 0);
+    image.Apply();
+
+    cam.targetTexture = null;
+    RenderTexture.active = null;
+
+    ProcessImage(image);
+}
+
+public RawImage displayImage; // Reference to a UI RawImage component
+
+void Update()
+{
+    displayImage.texture = outputTexture;
+}
+*/
+
+
+
+
